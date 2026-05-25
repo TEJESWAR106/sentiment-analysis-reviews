@@ -3,7 +3,7 @@
 Classifies text reviews as Positive, Neutral, or Negative
 using a Deep Learning LSTM model built with TensorFlow and Keras.
 ## Live Demo
-[Streamlit link](https://sentiment-analysis-reviews-di4wa678hbcp8vgiwpq64e.streamlit.app/)
+[Streamlit link](https://customer-churn-prediction-app-ewvre3f8ipcstgjfm4jufy.streamlit.app/)
 ## Tech Stack
 Python, TensorFlow, Keras, Pandas, NumPy,
 NLTK, Scikit-learn, Matplotlib, Seaborn
