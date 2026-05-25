@@ -1,4 +1,5 @@
-import numpy as np
+import pandas as pd
+import numpy as np 
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
@@ -78,4 +79,12 @@ def train_and_evaluate(X, y):
     plt.title('Confusion Matrix')
     plt.savefig('plots/confusion_matrix.png', dpi=150)
     plt.show()
+    labels = ['negative', 'neutral', 'positive']
+    sentiment_results = pd.DataFrame({
+        'Actual': [labels[i] for i in y_test],
+        'Predicted': [labels[i] for i in y_pred]
+    })
+    sentiment_results.to_csv('sentiment_results.csv', index=False)
+    print("Saved sentiment_results.csv")
     return model
+# Save sentiment predictions for Tableau
